@@ -195,7 +195,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                
-      
+            @can('isadmin')
           <li class="nav-item">
             <a href="/jobs" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
@@ -205,6 +205,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </a>
           </li>
+          @endcan
 
           
           <li class="nav-item">
@@ -216,6 +217,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </a>
           </li>
+
+            
+          <li class="nav-item">
+            <a href="/stocks" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                 Charts
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+
+            
+       
 
           <li class="nav-item">
             
