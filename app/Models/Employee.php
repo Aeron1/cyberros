@@ -5,14 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Jobs extends Model
+class Employee extends Model
 {
     use HasFactory;
 
-    public function Wishlist()
+    public function user()
     {
-        return $this->hasMany(Wishlist::class);
+        return $this->belongsTo(User::class);
     }
-
-
 }

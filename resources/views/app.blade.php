@@ -229,6 +229,37 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
           </li>
 
+          <li class="nav-item">
+            <a href="/employees" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                 Employee
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/wishlists" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Wishlist
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/send-mail" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Mail
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+
+
             
        
 

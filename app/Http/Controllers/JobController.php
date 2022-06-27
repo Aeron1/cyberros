@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Jobs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Str;
 
 class JobController extends Controller
 {
@@ -45,6 +46,7 @@ class JobController extends Controller
         $job->content = $request->content;
         $job->type = $request->type;
         $job->company = $request->company;
+        $job->slug = Str::slug($request->title, '-');
         $job->save();
         return redirect()->back();
     }

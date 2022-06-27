@@ -47,6 +47,22 @@
                                     <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                 </form>
                             </td>
+
+                            <td>
+                                <form action="/wishlists" method="post">
+                                    @csrf
+                                    @if (session('message'))
+                                    <div class="alert alert-success" role="alert">
+                                        {{ session('message') }}
+                                    </div>
+                                        
+                                    @endif
+
+                                    <input type="text" name="user_id" value="{{ Auth::user()->id }}">
+                                    <input type="text" name="job_id" value="{{ $job->id }}">
+                                    <button type="submit" class="btn btn-primary btn-sm">Add to wishlist</button>
+                                </form>
+                            </td>
                         </tr>
                             
                         @endforeach
